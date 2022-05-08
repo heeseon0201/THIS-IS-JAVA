@@ -14,9 +14,11 @@ public class Member {
 			if(id.equals(member.id)) {
 				return true;
 			}
-			
 		}
 		return false;
 	}
-	
+	@Override
+	public int hashCode() {
+		return id.hashCode();
+	}
 }
